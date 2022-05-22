@@ -1,0 +1,78 @@
+<?php
+    class Contacts
+    {
+        /*-----------------------------------------------------
+                            Attributs :
+        -----------------------------------------------------*/ 
+        private $id_contact;
+        private $date_message;
+        private $content_message;
+        private $id_membre;
+        private $id_chat;
+
+
+        /*-----------------------------------------------------
+                            Constucteur (vide):
+        -----------------------------------------------------*/        
+        public function __construct()
+        {
+        }
+        /*-----------------------------------------------------
+                        Getter and Setter :
+        -----------------------------------------------------*/
+        //id_contact Getter and Setter
+        public function getIdContact()
+        {
+            return $this->id_contact;
+        }
+        public function setIdContact($newIdContact)
+        {
+            $this->id_contact = $newIdContact;
+        }
+        //date_message Getter and Setter
+        public function getDateMessage()
+        {
+            return $this->date_message;
+        }
+        public function setDateMessage($newDateMessage)
+        {
+            $this->date_message = $newDateMessage;
+        }
+        //content_message Getter and Setter
+        public function getContentMessage()
+        {
+            return $this->content_message;
+        }
+        public function setContentMessage($newContentMessage)
+        {
+            $this->content_message = $newContentMessage;
+        }
+        
+
+
+        //METHODE AJOUT D'UN CONTACT SUPPORT
+        public function createContact($bdd)
+        {   
+            //RECUPERATION DES VALEURS DE L'OBJET
+            $date_message = $this->getDateMessage();
+            $content_message = $this->getContentMessage();
+            try
+            {   
+                //REQUETE AJOUT D'UN CONTACT SUPPORT
+                $req = $bdd->prepare('INSERT INTO contacts(date_message, content_message) 
+                VALUES (:date_message, :content_message)');
+                //EXECUTION DE LA REQUETE SQL
+                $req->execute(array(
+                'date_message' => $date_message,
+                'content_message' => $content_message,                                                                                                                               
+            ));
+            }
+            catch(Exception $e)
+            {
+            //AFFICHAGE D'UNE EXCEPTION EN CAS D'ERREUR
+            die('Erreur : '.$e->getMessage());
+            }        
+        }
+    }
+    
+?>

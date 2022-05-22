@@ -1,0 +1,44 @@
+use fil_rouge;
+
+create table membres(
+idMembre int primary key auto_increment not null,
+nom_membre varchar(50) not null,
+prenom_membre varchar(50) not null,
+mdp_membre varchar(50) not null,
+telephone_membre varchar(50),
+mail_membre varchar(50) not null,
+login_membre varchar(50) not null,
+idDroit int,
+foreign key (idDroit) references droits (idDroit)
+);
+
+create table produits(
+idProduit int primary key auto_increment not null,
+photos_produit text(50),
+description_produit varchar(50),
+quantite_produit int,
+prix_produit int,
+idMembre int,
+foreign key (idMembre) references membres (idMembre),
+idCategorie_produit int,
+foreign key (idCategorie_produit) references categorie_produits (idCategorie_produit)
+);
+
+create table type_livraisons(
+idTypeLivraison int primary key auto_increment not null,
+livraison_domicile varchar(50),
+livraison_travail varchar(50),
+livraison_autres varchar(50),
+idProduit int,
+foreign key (idProduit) references produits (idProduit)
+);
+
+create table adresses(
+idAdresse int primary key auto_increment not null,
+numero_adresse int(50),
+rue_adresse varchar(50),
+idMembre int,
+foreign key (idMembre) references membres (idMembre),
+idVille int,
+foreign key (idVille) references villes (idVille)
+);

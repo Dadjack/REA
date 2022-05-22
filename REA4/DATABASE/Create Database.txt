@@ -1,0 +1,23 @@
+create database fil_rouge;
+use fil_rouge;
+
+create table droits(
+idDroit int primary key auto_increment not null,
+nom_droit varchar(50)
+);
+
+create table villes(
+idVille int primary key auto_increment not null,
+ville_cp int,
+ville_nom varchar(50)
+);
+
+create table mode_paiements(
+idPaiement int primary key auto_increment not null,
+libelle_paiement text
+);
+
+create table categorie_produits(
+idCategorie_produit int primary key auto_increment not null,
+nom_categorie varchar(50)
+);

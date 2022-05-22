@@ -1,0 +1,28 @@
+use fil_rouge;
+
+create table commandes(
+idCommande int primary key auto_increment not null,
+commande_produit varchar(50),
+commande_date datetime,
+idPaiement int,
+foreign key (idPaiement) references mode_paiements (idPaiement),
+idMembre int,
+foreign key (idMembre) references membres (idMembre)
+);
+
+create table commentaires(
+idCommentaire int primary key auto_increment not null,
+content_commentaire text,
+date_commentaire datetime,
+validation_commentaire tinyint(1),
+idMembre int,
+foreign key (idMembre) references membres (idMembre),
+idProduit int,
+foreign key (idProduit) references produits (idProduit)
+);
+
+create table paniers(
+idPanier int primary key auto_increment not null,
+idMembre int,
+foreign key (idMembre) references membres (idMembre)
+);

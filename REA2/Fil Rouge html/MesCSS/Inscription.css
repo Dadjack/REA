@@ -1,0 +1,120 @@
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+form fieldset{
+    background-image:url("../LogoGif/cher.gif");
+    background-size: cover;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+}
+
+legend{
+    background-image:url("../LogoGif/cher.gif");
+    font-size: 50px;
+    text-align: center;
+    border: solid rgb(31, 27, 27);
+    box-shadow: 6px 6px 6px black;
+}
+
+fieldset{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+}
+
+.Nom,.Prenom,.Login,.Password1,.Password,.Telephone,.Mail{
+    padding: 10px;
+    border: solid black;
+    text-align: center;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.Nom{
+    margin-left: 120px;
+    width: 240px;
+}
+
+.Prenom{
+    margin-left: 88px;
+    width: 240px;
+}
+
+.Login{
+    margin-left: 115px;
+    width: 240px;
+}
+
+.Password1{
+    margin-left: 35px;
+    width: 240px;
+}
+
+.Password{
+    width: 235px;
+}
+
+.Telephone{
+    margin-left: 68px;
+    width: 40%;
+}
+
+.Mail{
+    margin-left: 101px;
+    width: 240px;
+}
+
+.formulaire{
+    background-image:url("../LogoGif/cher.gif");
+    background-size: cover;
+    border: solid black;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+}
+
+.Valid{
+    font-size: 25px;
+    margin: 10px;
+    width: 250px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+#agree-term{
+    margin-top: 50px;
+}
+
+span{
+    color: white;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------RESPONSIVE--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width:1000px){
+    form fieldset{
+        margin-top: 450px;
+    }    
+}

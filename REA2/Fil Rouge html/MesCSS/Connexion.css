@@ -1,0 +1,106 @@
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+form fieldset{
+    background-image:url("../LogoGif/cher.gif");
+    background-size: cover;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+}
+
+fieldset{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+}
+
+legend{
+    background-image:url("../LogoGif/cher.gif");
+    font-size: 60px;
+    text-align: center;
+    border: solid rgb(31, 27, 27);
+    box-shadow: 6px 6px 6px black;
+}
+
+.Label{
+    padding: 10px;
+    text-align: center;
+}
+
+.Login,.Password{
+    padding: 10px;
+    border: solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+.Login{
+    margin-left: 90px;
+    width: 200px;
+}
+
+.Password{
+    margin-top: 30px;
+    width: 200px;
+}
+
+.formulaire{
+background-image:url("../LogoGif/cher.gif");
+background-size: cover;
+border: solid black;
+display: flex;
+flex-direction: column;
+padding: 50px;
+margin: 50px;
+width: 500px;
+}
+
+.Valid{
+    font-size: 25px;
+    margin: 10px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+span{
+    color: white;
+}
+
+.checkbox{
+    margin-top: 50px;
+}
+
+.Compte{
+    display: flex;
+    justify-content: right;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------RESPONSIVE--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width:1000px){
+    form fieldset{
+        margin-top: 450px;
+    }    
+}

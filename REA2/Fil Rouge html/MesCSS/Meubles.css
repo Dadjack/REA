@@ -1,0 +1,76 @@
+/*----------------------------------------------------------------------*/
+
+/*-----------------------------PICTURES---------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+.Images1{
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.Images2{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    gap: 20px;
+}
+
+.Images3{
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.Images4{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    gap: 20px;
+}
+
+#img{
+    border: solid black;
+    box-shadow: 6px 6px 2px black;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------ANIMATIONS--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+/* #img:active{
+    transform: scale(2);
+    border: solid black;
+    display: flex;
+}  */
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------RESPONSIVE--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------*/
+
+/*-----------------------------PICTURES---------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+
+@media screen and (max-width:900px){
+    .Images1,.Images2,.Images3,.Images4{
+        flex-direction: column;
+    }    
+}

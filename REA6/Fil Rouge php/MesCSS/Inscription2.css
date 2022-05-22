@@ -1,0 +1,93 @@
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+form fieldset{
+    background-image:url("../LogoGif/cher2.gif");
+    background-size: cover;
+    font-size: 1vh;
+    color: white;
+    padding: 3vh;
+}
+
+legend{
+    background-image:url("../LogoGif/cher2.gif");
+    font-size: 6vh;
+    text-align: center;
+    border: solid rgb(31, 27, 27);
+    box-shadow: 6px 6px 6px black;
+}
+
+fieldset{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+}
+
+.Password1,.Password,.Mail{
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+    border: solid black;
+    text-align: center;
+    margin: 2vh;
+    margin-top: 4vh;
+    margin-left:5vh;
+    width: 50vh;
+}
+
+.Label{
+    font-size: 3em;
+}
+
+.formulaire{
+    background-image:url("../LogoGif/cher2.gif");
+    background-size: cover;
+    border: solid black;
+    padding: 5vh;
+    margin: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60vh;
+}
+
+.Valid{
+    font-size: 3vh;
+    width: 30vh;
+    margin-left: 8vh;
+    margin-top: 3vh;
+}
+
+#agree-term{
+    margin-top: 50px;
+}
+
+span{
+    color: white;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------RESPONSIVE--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width:1000px){
+    form fieldset{
+        margin-top: 450px;
+    }    
+}

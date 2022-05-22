@@ -1,0 +1,103 @@
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+legend{
+    background-image:url("../LogoGif/cher.gif");
+    font-size: 50px;
+    text-align: center;
+    border: solid black;
+    box-shadow: 6px 6px 6px black;
+}
+
+form fieldset{
+    background-image:url("../LogoGif/cher.gif");
+    background-size: cover;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 900px;
+}
+
+fieldset{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+}
+
+.formulaire{
+    background-image:url("../LogoGif/cher.gif");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid black;
+    padding: 50px;
+    width: 500px;
+    margin-top: 40px;
+}
+
+.Nom,.Prenom,.Mail,.Subject{
+    padding: 10px;
+    border: solid black;
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.Nom{
+    margin-left: 75px;
+}
+
+.Prenom{
+    margin-left: 43px;
+}
+
+.Mail{
+    margin-left: 56px;
+}
+
+.Subject{
+    margin-left: 80px;
+}
+
+span{
+    color: white;
+}
+
+#Com{
+    border: solid black;
+    margin-top: 20px;
+} 
+
+.Envoi{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------RESPONSIVE--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------FORM-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width:1000px){
+    form fieldset{
+        margin-top: 450px;
+    }    
+}

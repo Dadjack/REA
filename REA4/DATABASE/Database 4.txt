@@ -1,0 +1,17 @@
+use fil_rouge;
+
+create table passer(
+idProduit int not null,
+idCommande int not null,
+primary key (idProduit,idCommande),
+foreign key(idProduit) references produits(idProduit),
+foreign key(idCommande) references commandes(idCommande)
+);
+
+create table ajouter(
+idProduit int not null,
+idPanier int not null,
+primary key (idProduit,idPanier),
+foreign key(idProduit) references produits(idProduit),
+foreign key(idPanier) references paniers(idPanier)
+);

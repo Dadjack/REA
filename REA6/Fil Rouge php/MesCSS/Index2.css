@@ -1,0 +1,290 @@
+body {
+    background-image:url(../Images/imageb3.jpg);
+    background-attachment:fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding: 0;
+}
+
+
+header{
+    background-image:url("../LogoGif/cher2.gif");
+    background-size: cover;
+    border:solid black;
+    height: 200px;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*---------------------------NAVIGATION BAR----------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+#section{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-------------------------NAVIGATION BUTTONS---------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+.column{
+    padding: 15px;
+    text-shadow: 10px 6px 3px black;
+    /*clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);*/
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-----------------------------LINKS------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+a{
+    font-size: 29px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------TITLES------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+h1{
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  text-shadow: 6px 6px 2px black;
+  text-decoration: underline;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+h2{
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  text-shadow: 6px 6px 2px black;
+  margin-top: 100px;
+  text-decoration: underline;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*---------------------------ANIMATIONS---------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+.column:hover{
+    transform: scale(1.5);
+} 
+
+a:hover{
+    color: rgb(29, 230, 46);
+}
+
+@keyframes masuperanimation{
+  from {
+    transform: translateY(-300px);
+    }
+
+  to {
+    transform: translateY(0px);
+    }
+}
+
+h1{
+  animation: masuperanimation 2s;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-----------------------------FOOTER-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+footer{
+  background-image:url("../LogoGif/cher2.gif");
+  background-size: cover;
+  height:20vh;
+  border:solid;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  font-size: 4vh;
+  margin-top: 7vh;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-------------------------ICON AND LIST--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+#sectionIcon{
+    display:  none;
+}
+
+.list {
+    display: none;
+} 
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------------RESPONSIVE--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*--------------------------ICON SECTION--------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px){
+    .column{
+        display: none;
+    }
+    #sectionIcon{
+      display: block;    
+      /*box-shadow: 6px 6px 2px black;*/
+      width: 100px;
+      height: 100px;
+    }
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/*-------------------------DROP DOWN MENU-------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px){
+body{
+    padding: 10px;
+  }
+  .container {
+    border: none;
+    position: absolute;
+    top: 40px; 
+    margin-left: 170px;
+    padding: 20px;             
+    width: 250px;
+    list-style-type: none;
+  } 
+  .container:hover li {
+  display: block;
+  }
+  li{
+    background-image:url("../LogoGif/cher.gif");
+    background-size: cover;
+    padding: 10px;
+    border: solid;
+    text-shadow: 6px 6px 6px black;
+  }
+  a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+}
+
+
+/*----------------------------------------------------------------------*/
+
+/*-----------------------------TITLES-----------------------------------*/
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width:1000px){
+  h1{
+    
+    margin-top: 350px;
+  }    
+}
+
+@media screen and (max-width:900px){
+    h1{
+      margin-top: 350px;
+    }    
+} 
+
+
+
+/* @media screen and (max-width:700px){
+    h1{
+        margin-left: 300px;
+        margin-top:300px;
+    }    
+} */
+
+/*
+body {
+    padding: 20px;
+  }
+  .container {
+    border: 1px solid Lime;
+    padding: 10px;
+    width: 200px;
+    list-style-type: none;
+  }
+  .test1,
+  .MenuLinks {  
+    display: none;
+    border-color: orange;
+    border-style: dashed;
+    background: green;
+    pointer-events: none;
+  }
+  .test1 {
+    padding: 10px;
+    border-width: 1px 1px 0px 1px;
+  }
+  .MenuLinks {
+    border-width: 0px 1px 1px 1px;
+  }
+  .container:hover li {
+    display: block;
+  }
+  
+  Rule to hide both test1 and MenuLinks when X Close is clicked
+  .container:hover .test1:active,
+  .container:hover .test1:active + .MenuLinks {
+    display: none;
+  }
+  
+  
+  a {
+    pointer-events: auto;
+    color: Lime;
+    font-weight: bold;
+  }*/
